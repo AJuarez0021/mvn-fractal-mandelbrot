@@ -101,8 +101,8 @@ public class MandelbrotSet extends JPanel {
                 cont = 0;
 
                 do {
-                    //Z = (Z * Z) + C --> ecuacion Z=Z²+C
-                    z = z.pow(2).add(c);
+                    //Z = (Z * Z) + C --> ecuacion Z=Z²+C                    
+                    z = z.multiply(z).add(c);
                     cont++;
 
                     if (z.norm() > DIVERGE) {
